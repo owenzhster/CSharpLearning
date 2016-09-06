@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpLearning.type
 {
-    class TypeSample : OutTextIF
+    class TypeSample : IOutText
     {
         public dynamic de { get; set; }
 
@@ -34,7 +34,7 @@ namespace CSharpLearning.type
         }
 
     }
-    class RefTest:OutTextIF
+    class RefTest:IOutText
     {
         TypeSample ts = new TypeSample();
         public void outText()
